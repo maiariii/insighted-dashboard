@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InsightED</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<header class="topbar">
+    <div class="topbar-left">
+        <img src="logo.png" alt="InsightED Logo" class="topbar-logo">
+        <span class="brand">InsightED</span>
+    </div>
+    <div class="topbar-right">
+        School Information Dashboard System
+    </div>
+</header>
+<body>
+
+<div class="container">
+<aside class="sidebar">
+    <div class="logo">
+        U N I T S
+    </div>
+
+    <button class="nav-btn" onclick="showSection('profile', this)">School Profile</button>
+    <button class="nav-btn" onclick="showSection('enrollment', this)">Enrollment</button>
+    <button class="nav-btn" onclick="showSection('classes', this)">Organized Classes</button>
+    <button class="nav-btn" onclick="showSection('learner', this)">Learner Profile</button>
+    <button class="nav-btn" onclick="showSection('shifting', this)">Shifting & Modality</button>
+    <button class="nav-btn" onclick="showSection('resources', this)">School Resources</button>
+    <button class="nav-btn" onclick="showSection('facilities', this)">Physical Facilities</button>
+    <button class="nav-btn" onclick="showSection('terrain', this)">School Terrain</button>
+    <button class="nav-btn" onclick="showSection('safety', this)">Infrastructure & Safety</button>
+
+</aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+<section id="home" class="content-section active">
+    <div class="home-center">
+
+        <img src="logo.png" alt="InsightED Image" class="home-image">
+
+        <h2>Welcome to InsightED</h2>
+                <p class="home-message">
+            InsightED is a school information dashboard system designed to guide schools
+            in collecting and organizing essential data across all units.
+        </p>
+
+    </div>
+</section>
+
+<section id="profile" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="profile.gif" 
+                 alt="School Profile Animation" 
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>School Profile</h2>
+                <p>
+                    This unit collects the basic identity and official
+                    information of the school. It includes the school ID,
+                    full school name, exact location, and the levels of
+                    education offered (such as Kinder, Elementary, or
+                    Secondary).It also records the school head’s information
+                    and allows the school to be pinned for mapping purposes. 
+                    Additionally, it captures school ownership and classification,
+                    such as public or private status. This data serves as the 
+                    foundation of the system because all other records are connected to 
+                    the school profile. It ensures proper identification, organization, 
+                    and reporting of school-wide information in InsightED.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="enrollment" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="enrollment.gif"
+                 alt="Enrollment Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>Enrollment</h2>
+                <p>
+                    This unit records the total number of enrolled learners in the school.
+                    It includes general enrollment counts and identifies special learner
+                    groups such as those in ARAL Program (Grades 1–6), and other special
+                    programs. It also provides a learner data summary for easy analysis.
+                    The system helps school heads see how many students are officially
+                    enrolled and track special learning needs. This supports planning for
+                    teachers, classrooms, and resources. It also helps identify how many
+                    learners require additional academic support or intervention programs.
+                    The data is updated per school year for accurate monitoring.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="classes" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="classes.gif"
+                 alt="Organized Classes Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>Organized Classes</h2>
+                <p>
+                    This unit manages classroom distribution and section organization.
+                    It records how learners are grouped into sections and checks class size per section.
+                    It also supports multigrade combinations and helps optimize classroom assignments.
+                    The system provides a classroom registry showing all active sections in the school.
+                    This helps school heads balance class sizes and ensure efficient use of teachers and rooms.
+                    It also allows monitoring of overcrowded or underutilized classes.
+                    The goal is to improve learning conditions by organizing students properly and ensuring
+                    fair distribution across all grade levels.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="learner" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="learner.gif"
+                 alt="Learner Profile Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>Learner Profile</h2>
+                <p>
+                    This unit collects detailed learner group information for the school year.
+                    It includes special categories such as ALS learners, Muslim learners,
+                    Indigenous Peoples (IP), displaced learners, and overage learners.
+                    It also tracks dropout cases from previous and current school years.
+                    Additionally, it records nutritional status based on BMI measurements
+                    to monitor student health.
+                    This helps school heads understand the diversity of learners and identify
+                    vulnerable groups. The data supports inclusive education planning and
+                    ensures that no learner group is overlooked in school programs, services,
+                    and interventions.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="shifting" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="shifting.gif"
+                 alt="Shifting and Modality Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>Shifting & Modality</h2>
+                <p>
+                    This unit records how classes are scheduled and delivered in the school.
+                    It checks whether the school follows a single-shift, full in-person setup
+                    or uses multiple shifts to accommodate learners.
+                    It also maps schedules for each grade level to ensure proper time allocation
+                    for instruction. In addition, it tracks Emergency Alternative Delivery Modes (ADM)
+                    used during disasters, emergencies, or classroom shortages.
+                    This helps school heads understand how learning is being delivered and whether
+                    adjustments are needed. It ensures that learners continue their education
+                    even during disruptions or limited classroom availability.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resources" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="resources.gif"
+                 alt="School Resources Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>School Resources</h2>
+                <p>
+                    This unit tracks all physical and digital resources of the school.
+                    It includes classroom facilities by grade level, ICT equipment such as
+                    computers and tablets, and mobile learning tools like eCarts.
+                    It also records WASH facilities (water, sanitation, and hygiene) and
+                    utility services such as electricity and internet connectivity.
+                    This helps school heads monitor whether resources are sufficient for
+                    students and teachers, and supports planning for improvements or
+                    identifying shortages.
+                    The data ensures that schools can provide a safe, complete, and
+                    well-equipped learning environment for all learners.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="facilities" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="facilities.gif"
+                 alt="Physical Facilities Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>Physical Facilities</h2>
+                <p>
+                    This unit records all school buildings, rooms, and physical structures.
+                    It includes building inventory, room dimensions, usage type, and seating capacity.
+                    It also supports mapping of school spaces using a visual layout system.
+                    Rooms are categorized by grade level or function, such as instructional
+                    or non-instructional areas.
+                    This helps school heads manage space efficiently and plan construction
+                    or renovation needs. It also ensures classrooms are properly assigned
+                    and safe for students.
+                    The system provides a clear overview of how school space is being used
+                    across the campus.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="terrain" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="terrain.gif"
+                 alt="School Terrain Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>School Terrain</h2>
+                <p>
+                    This unit collects data about the school’s environment and accessibility.
+                    It includes transport access such as road conditions, lighting, and public
+                    transportation availability.
+                    It also records nearby hazards like rivers, steep areas, or flood-prone zones.
+                    Essential services such as hospitals, barangay halls, and transport terminals
+                    are mapped for safety planning.
+                    In addition, it tracks natural calamities experienced and potential risks
+                    in the surrounding community.
+                    This helps school heads assess environmental risks and improve emergency
+                    preparedness. The data ensures safe access to the school and supports
+                    long-term safety planning.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="safety" class="content-section">
+    <div class="card">
+        <div class="profile-header">
+            <img src="safety.gif"
+                 alt="Infrastructure and Safety Animation"
+                 class="profile-gif">
+            <div class="profile-text">
+                <h2>Infrastructure & Safety</h2>
+                <p>
+                    This unit monitors the safety and condition of school infrastructure.
+                    It includes electrical systems, wiring age, and inspection records.
+                    It checks the safety of power boxes, outlets, cords, and lighting systems.
+                    It also tracks CCTV systems, emergency tools, and disaster readiness equipment
+                    such as fire exits, alarms, and flashlights.
+                    Additionally, it records safety tools like fire extinguishers, first aid kits,
+                    and emergency communication devices.
+                    This ensures that the school environment is safe for students and staff.
+                    It helps prevent accidents and strengthens preparedness for emergencies
+                    and natural disasters.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
