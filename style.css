@@ -37,9 +37,7 @@ html, body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-
     min-height: 100vh;
-
     /* reduced top padding */
     padding: 40px 40px 40px;
 
@@ -79,13 +77,13 @@ html, body {
 /* NAV BUTTONS */
 .nav-btn {
     width: 100%;
-    padding: 15px 16px;
-    margin: 8px 0;
+    padding: 20px 16px;
+    margin: 10px 0;
     border: none;
     border-radius: 14px;
     background: rgba(15,23,42,0.05);
     color: #475569;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     text-align: left;
     cursor: pointer;
