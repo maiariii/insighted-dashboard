@@ -400,32 +400,48 @@ body[data-active="home"] .nav-btn.active {
 }
 
 /* RESPONSIVE LAYOUTS */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    .container {
+        padding: 24px;
+        gap: 24px;
+    }
+    
+    .sidebar {
+        width: 200px; /* Shrink sidebar slightly on smaller laptops */
+        padding: 20px 12px;
+    }
+    
+    .profile-gif {
+        max-width: 320px; /* Shrink GIF slightly on smaller laptops to fit side-by-side */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Only switch to vertical layout on mobile devices */
     .container {
         flex-direction: column;
         align-items: stretch;
-        padding: 24px;
-        gap: 24px;
+        padding: 16px;
+        gap: 20px;
     }
 
     .sidebar {
         width: 100%;
         position: static;
-        margin-bottom: 0;
     }
     
     .nav-btn.active::before {
-        display: none; /* Hide left line on mobile layout */
+        display: none; /* Hide active indicator bar on mobile */
+    }
+    
+    .profile-gif {
+        max-width: 100%; /* Full width on mobile vertical stack */
     }
 }
 
 @media (max-width: 640px) {
     .topbar-right {
-        display: none; /* Hide description on very small screens to prevent overlap */
-    }
-    
-    .container {
-        padding: 16px;
+        display: none; /* Hide topbar system subtitle on mobile */
     }
     
     .card {
@@ -435,7 +451,7 @@ body[data-active="home"] .nav-btn.active {
 
 @media (max-width: 480px) {
     .brand {
-        font-size: 17px; /* Scale down logo brand text slightly */
+        font-size: 17px;
     }
     
     .topbar-logo {
