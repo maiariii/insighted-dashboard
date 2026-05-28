@@ -240,8 +240,18 @@ body[data-active="home"] .nav-btn.active {
 }
 
 .brand {
-    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.brand-insight {
+    color: #2563eb; /* Royal Blue */
+}
+
+.brand-ed {
+    color: #dc2626; /* Crimson Red */
 }
 
 .topbar-right {
