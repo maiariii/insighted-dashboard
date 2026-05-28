@@ -82,9 +82,9 @@ html, body {
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center; /* Centered vertically */
     gap: 36px;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 88px); /* Account for taller topbar */
     padding: 40px;
     max-width: 1440px;
     margin: auto;
@@ -103,8 +103,6 @@ html, body {
         0 20px 40px rgba(15, 23, 42, 0.04),
         inset 0 1px 0 rgba(255, 255, 255, 0.6);
     color: #1e293b;
-    position: sticky;
-    top: 128px;
 }
 
 /* SIDEBAR HEADER */
