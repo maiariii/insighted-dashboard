@@ -364,17 +364,22 @@ body[data-active="home"] .nav-btn.active {
 .profile-header {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 40px;
+    flex-wrap: wrap; /* Allows natural wrapping when resized */
 }
 
 .profile-gif {
-    width: 420px;
+    flex: 1 1 300px; /* Fluid scaling, shrinkable down to 300px */
+    max-width: 420px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .profile-text {
+    flex: 2 1 350px; /* Fluid scaling, takes remaining space */
     display: flex;
     flex-direction: column;
 }
@@ -399,27 +404,41 @@ body[data-active="home"] .nav-btn.active {
     .container {
         flex-direction: column;
         align-items: stretch;
+        padding: 24px;
+        gap: 24px;
     }
 
     .sidebar {
         width: 100%;
         position: static;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+    }
+    
+    .nav-btn.active::before {
+        display: none; /* Hide left line on mobile layout */
     }
 }
 
-@media (max-width: 768px) {
-    .profile-header {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 640px) {
+    .topbar-right {
+        display: none; /* Hide description on very small screens to prevent overlap */
     }
-
-    .profile-gif {
-        width: 100%;
-        max-width: 320px;
+    
+    .container {
+        padding: 16px;
     }
+    
+    .card {
+        padding: 24px;
+    }
+}
 
-    .profile-text p {
-        text-align: center;
+@media (max-width: 480px) {
+    .brand {
+        font-size: 17px; /* Scale down logo brand text slightly */
+    }
+    
+    .topbar-logo {
+        height: 36px;
     }
 }
