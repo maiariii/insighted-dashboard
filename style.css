@@ -224,6 +224,13 @@ body[data-active="home"] .nav-btn.active {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.topbar-left:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
 }
 
 .topbar-logo {
