@@ -227,7 +227,7 @@ body[data-active="home"] .nav-btn.active {
 }
 
 .topbar-logo {
-    height: 32px;
+    height: 44px;
     width: auto;
     border-radius: 8px;
 }
@@ -253,7 +253,7 @@ body[data-active="home"] .nav-btn.active {
 }
 
 .home-image {
-    width: 180px;
+    width: 260px;
     margin-bottom: 20px;
 }
 
